@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER"
+      spacing="14"
+      prefHeight="550.0"
+      prefWidth="700.0"
+      xmlns="http://javafx.com/javafx/26"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="HomeController"
+      style="-fx-background-color: linear-gradient(to bottom right, #DDE7FF, #E8DEFF, #F5F3FF);">
+
+    <Label text="QUIZ MASTER"
+           style="-fx-font-size: 40px;
+                  -fx-font-weight: bold;
+                  -fx-text-fill: #1F2A44;" />
+
+    <Label text="Test your knowledge. Learn. Improve."
+           style="-fx-font-size: 18px;
+                  -fx-text-fill: #53627D;" />
+
+    <Label text="Java  •  DBMS  •  COA  •  Electronics"
+           style="-fx-font-size: 15px;
+                  -fx-text-fill: #687691;" />
+
+    <Button text="START QUIZ"
+            prefWidth="260"
+            prefHeight="55"
+            onAction="#startQuiz"
+            style="-fx-font-size: 17px;
+                   -fx-font-weight: bold;
+                   -fx-text-fill: white;
+                   -fx-background-color: linear-gradient(to right, #4F6DF5, #7657E8);
+                   -fx-background-radius: 12;
+                   -fx-cursor: hand;" />
+
+    <Button text="MY RESULTS"
+            prefWidth="220"
+            prefHeight="45"
+            onAction="#showResults"
+            style="-fx-font-size: 15px;
+                   -fx-font-weight: bold;
+                   -fx-text-fill: #4F6DF5;
+                   -fx-background-color: white;
+                   -fx-background-radius: 12;
+                   -fx-border-color: #4F6DF5;
+                   -fx-border-radius: 12;
+                   -fx-cursor: hand;" />
+
+    <Label text="Choose a subject and challenge yourself!"
+           style="-fx-font-size: 13px;
+                  -fx-text-fill: #8993A7;" />
+
+</VBox>

@@ -1,0 +1,20 @@
+body{
+    background-color:teal;
+    text-align: center;
+
+    button {
+    background-color: white;
+    color: teal;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+    button:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+}
+#quiz {
+    display: none;
+}

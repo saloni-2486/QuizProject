@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER"
+      spacing="18"
+      prefHeight="500.0"
+      prefWidth="700.0"
+      xmlns="http://javafx.com/javafx/26"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ResultsHistoryController"
+      style="-fx-background-color: linear-gradient(to bottom right, #DDE7FF, #E8DEFF, #F5F3FF);">
+
+    <Label text="MY RESULTS"
+           style="-fx-font-size: 32px;
+                  -fx-font-weight: bold;
+                  -fx-text-fill: #1F2A44;" />
+
+    <Label text="Your previous quiz attempts"
+           style="-fx-font-size: 17px;
+                  -fx-text-fill: #53627D;" />
+
+    <ListView fx:id="resultsList"
+              prefWidth="500"
+              prefHeight="270"
+              style="-fx-background-radius: 15;" />
+
+    <Button text="BACK TO HOME"
+            prefWidth="220"
+            prefHeight="45"
+            onAction="#backToHome"
+            style="-fx-font-size: 15px;
+                   -fx-font-weight: bold;
+                   -fx-text-fill: white;
+                   -fx-background-color: linear-gradient(to right, #4F6DF5, #7657E8);
+                   -fx-background-radius: 12;
+                   -fx-cursor: hand;" />
+
+</VBox>

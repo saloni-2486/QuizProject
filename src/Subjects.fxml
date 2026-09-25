@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER"
+      spacing="18"
+      prefHeight="500.0"
+      prefWidth="700.0"
+      xmlns="http://javafx.com/javafx/26"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="SubjectController"
+      style="-fx-background-color: linear-gradient(to bottom right, #DDE7FF, #E8DEFF, #F5F3FF);">
+
+    <Label text="CHOOSE YOUR SUBJECT"
+           style="-fx-font-size: 30px;
+                  -fx-font-weight: bold;
+                  -fx-text-fill: #1F2A44;" />
+
+    <Label text="Select a quiz to begin"
+           style="-fx-font-size: 17px;
+                  -fx-text-fill: #53627D;" />
+
+    <GridPane hgap="20"
+              vgap="20"
+              alignment="CENTER">
+
+        <Button text="JAVA BASICS"
+                prefWidth="250"
+                prefHeight="100"
+                onAction="#startJavaQuiz"
+                style="-fx-font-size: 17px;
+                       -fx-font-weight: bold;
+                       -fx-text-fill: white;
+                       -fx-background-color: linear-gradient(to bottom right, #4F6DF5, #6B5CE7);
+                       -fx-background-radius: 15;
+                       -fx-cursor: hand;"
+                GridPane.columnIndex="0"
+                GridPane.rowIndex="0"/>
+
+        <Button text="DBMS BASICS"
+                prefWidth="250"
+                prefHeight="100"
+                onAction="#startDBMSQuiz"
+                style="-fx-font-size: 17px;
+                       -fx-font-weight: bold;
+                       -fx-text-fill: white;
+                       -fx-background-color: linear-gradient(to bottom right, #5668E8, #7A55D9);
+                       -fx-background-radius: 15;
+                       -fx-cursor: hand;"
+                GridPane.columnIndex="1"
+                GridPane.rowIndex="0"/>
+
+        <Button text="COMPUTER ORGANIZATION"
+                prefWidth="250"
+                prefHeight="100"
+                onAction="#startCOAQuiz"
+                style="-fx-font-size: 15px;
+                       -fx-font-weight: bold;
+                       -fx-text-fill: white;
+                       -fx-background-color: linear-gradient(to bottom right, #536FCE, #7658C8);
+                       -fx-background-radius: 15;
+                       -fx-cursor: hand;"
+                GridPane.columnIndex="0"
+                GridPane.rowIndex="1"/>
+
+        <Button text="ELECTRONICS"
+                prefWidth="250"
+                prefHeight="100"
+                onAction="#startElectronicsQuiz"
+                style="-fx-font-size: 17px;
+                       -fx-font-weight: bold;
+                       -fx-text-fill: white;
+                       -fx-background-color: linear-gradient(to bottom right, #4F75D9, #8059D6);
+                       -fx-background-radius: 15;
+                       -fx-cursor: hand;"
+                GridPane.columnIndex="1"
+                GridPane.rowIndex="1"/>
+
+    </GridPane>
+
+</VBox>
